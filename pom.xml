@@ -26,7 +26,6 @@
     <junit.version>4.12</junit.version>
     <slf4j.version>1.7.25</slf4j.version>
     <org.powermock.version>1.6.5</org.powermock.version>
-    <org.apache.commons.version>3.7</org.apache.commons.version>
     <maven.jar.plugin.version>3.0.2</maven.jar.plugin.version>
     <maven.surefire.plugin.version>2.20.1</maven.surefire.plugin.version>
     <maven.compiler.plugin.version>3.7.0</maven.compiler.plugin.version>

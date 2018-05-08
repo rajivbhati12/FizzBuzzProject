@@ -2,15 +2,11 @@ package com.base;
 
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.TestName;
 import org.junit.runner.RunWith;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 import org.powermock.reflect.Whitebox;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.CALLS_REAL_METHODS;
@@ -22,10 +18,6 @@ import static org.powermock.api.mockito.PowerMockito.when;
 @PrepareForTest(FizzBuzz.class)
 public class FizzBuzzUnitTest {
 
-    @Rule
-    public final TestName testName = new TestName();
-
-    private final Logger fizzBuzzTestLogger = LoggerFactory.getLogger(FizzBuzzUnitTest.class);
     private FizzBuzz fizzBuzz;
 
     @Before
@@ -35,7 +27,6 @@ public class FizzBuzzUnitTest {
 
     @Test
     public void test_fizzbuzz_class_exists() {
-        fizzBuzzTestLogger.info(testName.getMethodName());
         try {
             Class.forName("com.base.FizzBuzz");
         } catch (Exception e) {
